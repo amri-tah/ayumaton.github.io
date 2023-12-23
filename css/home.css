@@ -12,25 +12,28 @@
     border-radius: 10px;
 }
 
-.business-model-content{
-    display: flex;
+@media only screen and (min-width: 1350px) {
+    .business-model-content{
+        display: flex;
+    }
+    .content-image{
+        background-image: url("../images/Business\ Model.png");
+        background-repeat: no-repeat;
+        width:800px;
+        height: 300px;
+        background-size: 100%;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
 }
-.content-image{
-    background-image: url("../images/Business\ Model.png");
-    background-repeat: no-repeat;
-    width:800px;
-    height: 300px;
-    background-size: 100%;
-    margin: 20px;
-    margin-bottom: 0px;
-}
+
 
 .the-team-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2px 100px;
+    padding: 2px auto;
 }
 .the-team-container a{
     font-size: 1rem;
