@@ -1,0 +1,120 @@
+.dnt-container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    height: 70vh;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    padding:35px;
+    margin: 10px 30px 30px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    
+}
+
+.diagnose-and-treat{
+    border-radius: 17px;
+    background-color: var(--primary-color);
+}
+
+h2{
+    font-weight: normal;
+}
+.dnt-header{
+    padding-bottom: 1px;
+    border-bottom: 0.5px solid black;
+}
+
+#messages{
+    margin-top: 20px;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.messages-bottom{
+    margin: 20px 5px 0px 5px;
+    display: flex;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.messages-bottom img{
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px 20px 20px;
+}
+
+#dnt-input{
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
+
+#send{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+#send:hover{
+    opacity: 0.75;
+}
+
+.bot-message{
+    margin: 5px;
+    
+}
+
+.bot-message div{
+    margin-left: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 25px;
+    line-height: 160%;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--accent);
+    max-width: 70%;
+    animation: floatup .5s forwards;
+}
+
+.bot-images{
+    margin-left: 30px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.bot-images img {
+    height: 120px;
+    width: 120px;
+    margin-left: 30px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    animation: floatup .5s forwards;
+}
+
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.chat-bar-bottom{
+    height:100px;
+    width: 200px;
+}

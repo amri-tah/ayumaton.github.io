@@ -1,0 +1,104 @@
+.paper-guide-container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    height: 70vh;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    padding:35px;
+    margin: 10px 30px 30px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+}
+
+.paper-guide{
+    border-radius: 17px;
+    background-color: var(--primary-color);
+}
+
+h2{
+    font-weight: normal;
+}
+.paper-guide-header{
+    padding-bottom: 1px;
+    border-bottom: 0.5px solid black;
+}
+
+#messages{
+    margin-top: 10px;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.messages-bottom{
+    margin: 20px 5px 0px 5px;
+    display: flex;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.messages-bottom img{
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px 20px 20px;
+}
+
+#paper-input{
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
+
+#send{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+#send:hover{
+    opacity: 0.75;
+}
+
+.bot-message{
+    margin: 5px;
+}
+
+.bot-message div{
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 25px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    max-width: 70%;
+    animation: floatup .5s forwards;
+}
+
+.bot-message a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 1.1rem;
+}
+
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.chat-bar-bottom{
+    height:100px;
+    width: 200px;
+}

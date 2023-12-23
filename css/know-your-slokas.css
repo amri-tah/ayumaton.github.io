@@ -1,0 +1,253 @@
+.know-your-slokas-container{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  height: 70vh;
+  text-align: justify;
+  background-color: var(--secondary-color);
+  padding:35px;
+  padding-bottom: 100px;
+  margin: 10px 30px 30px 10px;
+  border-radius: 10px;
+}
+.know-your-slokas{
+    border-radius: 17px;
+    background-color: var(--primary-color);
+}
+h2{
+    font-weight: normal;
+}
+.slokas-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1px;
+    border-bottom: 0.5px solid black;
+    margin-bottom: 20px;
+}
+
+button{
+  padding: 5px 20px;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px var(--primary-color) solid;
+}
+
+button:hover{
+  background-color: var(--accent);
+  color: white;
+
+}
+
+.lang-switch{
+  display: flex;
+  justify-content: center;
+}
+/* ----- search box */
+.search-box {
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.mainbox {
+  box-sizing: border-box;
+  position: relative;
+  width: 280px;
+  height: 49px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  border-radius: 160px;
+  background-color: var(--accent);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.checkbox:focus {
+  border: none;
+  outline: none;
+}
+
+.checkbox:checked {
+  right: 10px;
+}
+
+.checkbox:checked ~ .mainbox {
+  width: 50px;
+}
+
+.checkbox:checked ~ .mainbox .search_input {
+  width: 0;
+  height: 0px;
+}
+
+.checkbox:checked ~ .mainbox .iconContainer {
+  padding-right: 8px;
+}
+
+.checkbox {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  z-index: 9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.search_input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 230px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  font-size: 1em;
+  color: white;
+  transition: all 0.3s ease;
+  font-family: "Poppins"
+}
+
+.search_input::placeholder {
+  color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.search_icon {
+  box-sizing: border-box;
+  fill: white;
+  font-size: 1.3em;
+}
+ 
+/* --------------------------- */
+
+
+.slokas{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: none;
+  max-height: 100%;
+  max-width: 120%;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.card{
+  width: fit-content;
+  margin: 20px 20px;
+  padding: 0px;
+  flex-grow: 1;
+  flex-basis: 40%;
+}
+
+.box {
+  background-color: rgba(255,255,255,0.2);
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-clip: padding-box;
+  text-align: center;
+  transition: background-color 300ms ease-in-out;
+}
+
+.button {
+  font-size: 1em;
+  color: black;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#sanskrit, #english, #hindi{
+  background-color: white;
+  color: black;
+}
+
+.box:hover {
+  background: var(--primary-color);
+}
+  
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin:10% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  overflow-x: none;
+  overflow-y: auto;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin: 20px auto;
+  text-align: center;
+  color: black;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+.lang-switch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-around;
+    align-items: center;
+    gap:40px;
+    margin: 25px auto;
+    margin-bottom: 0px;
+    
+}
+
+.content{
+    padding:50px;
+    margin: 0px 30px;
+}

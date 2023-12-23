@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayumaton</title>
+    <link rel="stylesheet" href="css/veda.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/main-logo.png">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-bar">
+            <a href="https://www.sih.gov.in/" target="_blank"><div class="sih-logo"></div></a>
+            <div class="menu-items">
+                <div class="home">
+                    <div class="home-logo"></div>
+                    <span><a href="home.html">Home</a></span>
+                </div>
+                <div class="unpacking-samas">
+                    <div class="unpacking-samas-logo"></div>
+                    <span><a href="unpacking-samas.html">Unpacking Samas</a></span>
+                </div>
+                <div class="know-your-slokas">
+                    <div class="know-your-slokas-logo"></div>
+                    <span><a href="know-your-slokas.html">Know Your Slokas</a></span>
+                </div>
+                <div class="diagnose-and-treat">
+                    <div class="diagnose-and-treat-logo"></div>
+                    <span><a href="diagnose-and-treat.html">Diagnose And Treat</a></span>
+                </div>
+                <div class="veda">
+                    <div class="veda-logo"></div>
+                    <span><a href="veda.html">Veda (Chat bot)</a></span>
+                </div>
+                <div class="paper-guide">
+                    <div class="paper-guide-logo"></div>
+                    <span><a href="paper-guide.html">Paper Guide</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <nav>
+                <div class="ayu-logo"></div>
+                <a href="home.html">Ayumaton</a>
+            </nav>
+            
+            <div class="veda-container">
+                <div class="veda-header"><h2>Veda (ChatBot)</h2></div>
+                <div id="messages"></div>
+                <div class="messages-bottom">
+                        <img src="images/cgpt.png">
+                        <input type="textarea" id="veda-input" name="veda-input" id="veda-input" placeholder="How can I help you?">
+                        <img src="images/send.png" id="send" onclick="sendButton()">
+                </div>
+                <div id="chat-bar-bottom">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bot-response.js"></script>
+    <script src="js/veda-chat.js"></script>
+</html>

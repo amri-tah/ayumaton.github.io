@@ -1,0 +1,62 @@
+.home{
+    border-radius: 17px;
+    background-color: var(--primary-color);
+}
+
+.about-us, .business-model, .the-team{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    padding:35px;
+    margin: 10px 30px 30px 10px;
+    border-radius: 10px;
+}
+
+.business-model-content{
+    display: flex;
+}
+.content-image{
+    background-image: url("../images/Business\ Model.png");
+    background-repeat: no-repeat;
+    width:800px;
+    height: 300px;
+    background-size: 100%;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.the-team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2px 100px;
+}
+.the-team-container a{
+    font-size: 1rem;
+}
+
+
+.card{
+    font-weight: normal;
+    margin: 5px;
+    text-align: left;
+    width: 170px;
+    padding:10px;
+}
+
+.card img{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,103 @@
+.samas-container{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    text-align: justify;
+    background-color: var(--secondary-color);
+    padding:35px;
+    margin: 10px 30px 30px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    
+}
+.unpacking-samas{
+    border-radius: 17px;
+    background-color: var(--primary-color);
+}
+
+h2{
+    font-weight: normal;
+}
+.samas-header{
+    padding-bottom: 1px;
+    border-bottom: 0.5px solid black;
+}
+
+#messages{
+    line-height: 160%;
+    margin: 0px;
+    padding-bottom: 10px;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.messages-bottom{
+    display: flex;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px 50px 10px 50px;
+}
+
+
+
+.messages-bottom img{
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px 20px 20px;
+    
+}
+
+#samas-input{
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    margin: 20px;
+}
+
+#send{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+#send:hover{
+    opacity: 0.75;
+}
+
+.bot-message{
+    margin: 5px;
+}
+
+.bot-message div{
+    margin: 0px auto;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--accent);
+    max-width: 80%;
+    animation: floatup .5s forwards;
+}
+
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.chat-bar-bottom{
+    height:100px;
+    width: 200px;
+}

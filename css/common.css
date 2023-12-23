@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+:root {
+    --tertiary-color: #F0F4F1;
+    --bg: #f8fcf9;
+    --accent: #41a464; 
+    --secondary-color: #bffbbe;
+    --primary-color: #40c965;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+.wrapper{
+    display: flex;
+}
+
+body{
+    background-image: url("../images/bg.png");
+    background-size: 700px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: var(--bg)
+}
+.side-bar{
+    background-color: var(--secondary-color);
+    width:380px;
+    margin: 20px;
+    border-radius: 15px;
+    background-image: url(../images/sidebar-dec.png);
+
+    margin-top: 30px;
+    padding-bottom: 100px;
+    height: 80vh;
+    position: sticky;
+    top:30px;
+}
+
+.main{
+    width: 88%;
+    height: 100%;
+}
+
+
+li{
+    margin-left: 30px;
+}
+
+.veda-container a{
+        font-size: 1rem;
+        color:blue;
+        text-decoration: underline;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10px;
+    margin: 0px 45px;
+}
+.sih-logo{
+    width:40px;
+    height:40px;
+    padding:15%;
+    margin: 50px auto;
+
+    background-image: url("../images/sih.png");
+    background-size: 100%;
+}
+
+.home, .unpacking-samas, .know-your-slokas, .diagnose-and-treat, .veda, .paper-guide{
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+}
+
+.home-logo, .unpacking-samas-logo, .know-your-slokas-logo, .diagnose-and-treat-logo, .veda-logo, .paper-guide-logo{
+    background-size: 100%;
+    width: 50px;
+    height:50px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+
+.home-logo{
+    background-image: url("../images/home.png");
+}
+.unpacking-samas-logo{
+    background-image: url("../images/unpacking-samas.png");
+}
+
+.know-your-slokas-logo{
+    background-image: url("../images/know-your-slokas.png");
+}
+.diagnose-and-treat-logo{
+    background-image: url("../images/diagnose-and-treat.png");
+}
+.veda-logo{
+    background-image: url("../images/veda.png");
+}
+.paper-guide-logo{
+    background-image: url("../images/paper-guide.png");
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.ayu-logo{
+    background-image: url("../images/main-logo.png");
+    background-size: 100%;
+    width: 70px;
+    height:70px;
+    background-repeat: no-repeat;
+}
+
+nav{
+    margin: 40px 50px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    font-size: 2.3rem;
+    font-weight: 700;
+}

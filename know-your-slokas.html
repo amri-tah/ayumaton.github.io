@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayumaton</title>
+    <link rel="stylesheet" href="css/know-your-slokas.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/main-logo.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-bar">
+            <a href="https://www.sih.gov.in/" target="_blank"><div class="sih-logo"></div></a>
+            <div class="menu-items">
+                <div class="home">
+                    <div class="home-logo"></div>
+                    <span><a href="home.html">Home</a></span>
+                </div>
+                <div class="unpacking-samas">
+                    <div class="unpacking-samas-logo"></div>
+                    <span><a href="unpacking-samas.html">Unpacking Samas</a></span>
+                </div>
+                <div class="know-your-slokas">
+                    <div class="know-your-slokas-logo"></div>
+                    <span><a href="know-your-slokas.html">Know Your Slokas</a></span>
+                </div>
+                <div class="diagnose-and-treat">
+                    <div class="diagnose-and-treat-logo"></div>
+                    <span><a href="diagnose-and-treat.html">Diagnose And Treat</a></span>
+                </div>
+                <div class="veda">
+                    <div class="veda-logo"></div>
+                    <span><a href="veda.html">Veda (Chat bot)</a></span>
+                </div>
+                <div class="paper-guide">
+                    <div class="paper-guide-logo"></div>
+                    <span><a href="paper-guide.html">Paper Guide</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <nav>
+                <div class="ayu-logo"></div>
+                <a href="home.html">Ayumaton</a>
+            </nav>
+            
+            <div class="know-your-slokas-container">
+                <div class="slokas-header">
+                    <h2>Know Your Slokas</h2>
+                    <div class="search-box">
+                        <input checked="" class="checkbox" type="checkbox"> 
+                        <div class="mainbox">
+                            <div class="iconContainer">
+                                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                            </div>
+                        <input class="search_input" placeholder="Search for a sloka.." type="text">
+                        </div>
+                </div></div>
+
+                <div class="slokas">
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            आयु: कामायमानेन धर्मार्थ सुखसाधानम् | आयुर्वेदोपदेशेषु विधेय: परमदरा: ||
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>आयु: कामायमानेन धर्मार्थ सुखसाधानम् |<br>
+                                     आयुर्वेदोपदेशेषु विधेय: परमदरा: ||
+                                </h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    To achieve the purpose of life, that is Dharma – following the path of righteousness, Artha – earning money in a legal way, Kama – fulfilling our desire, Moksha – achieving Salvation,one should concentrate on having a long life. To learn the science of Ayurveda, which explains how to achieve this purpose, ‘obedience’ (Vidheya) is the most important quality.    
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    जीवनस्य उद्देश्यं साधयितुं अर्थात् धर्मः – धर्ममार्गं अनुसृत्य अर्थः – विधिपूर्वकं धनं अर्जयन् कामः – अस्माकं इच्छां पूरयन् मोक्षः – मोक्षं प्राप्तुं,दीर्घायुः प्राप्तुं एकाग्रतां कुर्यात्। एतत् प्रयोजनं कथं साधयेत् इति व्याख्यातं आयुर्वेदस्य विज्ञानं ज्ञातुं ‘आज्ञापालनम्’ (विधेयः) सर्वाधिकः महत्त्वपूर्णः गुणः अस्ति ।
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    जीवन के उद्देश्य को प्राप्त करने के लिए, यानी धर्म - धार्मिकता के मार्ग पर चलना, अर्थ - कानूनी तरीके से पैसा कमाना, काम - हमारी इच्छा को पूरा करना, मोक्ष - मोक्ष प्राप्त करना, व्यक्ति को लंबे जीवन पर ध्यान केंद्रित करना चाहिए। आयुर्वेद के विज्ञान को सीखने के लिए, जो बताता है कि इस उद्देश्य को कैसे प्राप्त किया जाए, 'आज्ञाकारिता' (विद्या) सबसे महत्वपूर्ण गुण है।
+                                </div>
+                        </div></div>
+                    </div>
+
+                    
+
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            कायबालग्रहोर्ध्वाङ्ग शाल्यादंस्त्र जरावषानृ || अष्टावङ्गानि तस्याहुः चिकित्सा येशु संश्रिता |
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>कायबालग्रहोर्ध्वाङ्ग शाल्यादंस्त्र जरावषानृ ||<br> अष्टावङ्गानि तस्याहुः चिकित्सा येशु संश्रिता |</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    1. Kaya Chikitsa – General medicine 
+                                    <br>2. Bala Chikitsa – Paediatrics 
+                                    <br>3. Graha Chikitsa – Psychiatry 
+                                    <br>4. Urdhvanga Chikitsa – Diseases and treatment of Ear, Nose, Throat, Eyes and Head (neck and above region) 
+                                    <br>5. Shalya Chikitsa – Surgery 
+                                    <br>6. Damshrta Chikitsa – Toxicology 
+                                    <br>7. Jara Chikitsa – Geriatrics 
+                                    <br>8. Vrushya Chikitsa – Aphrodisiac therapy 
+                                    These are the eight branches of Ayurveda. 
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            वायु: पित्तं कफश्चेति त्रयो दोष: समसता: ||
+                             विकृत’विकृता देहं घनन्ति ते वर्त्तयन्ती च |
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            ते व्यापिनो’पि ह्रीन्नाभ्योरधोमध्योर्ध्व संश्रया: || वायोऽहोरात्रिभुक्तानान् ते’न्तमध्यादिगा: क्रामात् |
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            तैर्भवेद्विषम: टीक्षणो मण्डश्चाग्नि: समै: सम: ||
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            कोष्ठ: क्रूरो मृदुर्मध्यो मध्य: स्यात्तै: समैरपि |
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            नित्यं हिताहारविहारसेवी समीक्ष्यकारी विषयेष्वसक्त: । दाता सम: सत्यपर: क्षमावानाप्तोपसेवी च भवत्यरोग: ॥
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+                    <div class="card">
+                        <a class="button" href="#popup1" onclick="toggleEnglish()">
+                        <div class="box">
+                            आहारशयनाब्रह्मचर्येर्युक्त्या प्रायोजितै: शरीरं धार्यते नित्यमागारमिव धारणै:॥
+                        </div>
+                    </a>
+                        
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>षड् दोषाः पुरुषेणेह हातव्या भूतिमिच्छता। <br>
+                                    निद्रा तद्रा भयं क्रोधः आलस्यं दीर्घसूत्रता ॥</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="lang-switch">
+                                    <button id="sanskrit" onclick="toggleSanskrit()">Sanskrit</button> 
+                                    <button id="english" onclick="toggleEnglish()">English</button> 
+                                    <button id="hindi" onclick="toggleHindi()">Hindi</button> 
+                                </div>
+                                <div class="content" id="eng-content">
+                                    2" (Vyayamaat): Through exercise<br>Meaning: Physical activity or exercise is the starting point of the sloka. It emphasizes the importance of engaging in physical activity. đl r (labhate Swasthyam): One gains health
+                                    <br><br>Meaning: Regular exercise leads to the acquisition of good health. It highlights that physical fitness is a result of exercise. alafyi (Deerghayushyam): Longevity
+                                    <br><br>Engaging in physical activity contributes to a longer and healthier life. It implies that exercise can extend one s lifespan. do (Balam): Strength 
+                                    <br><br>Meaning: Exercise enhances physical strength. It suggests that being active makes the body stronger. View More
+                                </div>
+                                
+                                <div class="content" id="sans-content">
+                                    २" (व्यायामात्): व्यायामद्वारा भावार्थः- शारीरिकक्रिया वा व्यायामः श्लोकस्य आरम्भबिन्दुः भवति । शारीरिकक्रियायां प्रवृत्तेः महत्त्वं बोधयति । đl r (labhate Swasthyam): आरोग्यं प्राप्नोति
+                                    <br><br>अर्थः- नियमितव्यायामस्य कारणेन सुस्वास्थ्यस्य प्राप्तिः भवति। शारीरिकसुष्ठुता व्यायामस्य परिणामः इति प्रकाशयति । alafyi (दीर्घायुष्यम्): दीर्घायु
+                                    शारीरिकक्रियाकलापं कृत्वा दीर्घकालं स्वस्थं च आयुः भवति । व्यायामेन आयुः विस्तारयितुं शक्यते इति तात्पर्यम् । do (बलम्): बलम्
+                                    <br><br>अर्थः- व्यायामेन शारीरिकबलं वर्धते। सक्रियत्वेन शरीरं बलवत्तरं भवति इति सूचितं भवति । अधिकं पश्यन्तु View More
+                                </div>
+
+                                <div class="content" id="hindi-content">
+                                    2" (व्यायामत): व्यायाम के माध्यम सेअर्थ: शारीरिक गतिविधि या व्यायाम श्लोक का प्रारंभिक बिंदु है। यह शारीरिक गतिविधि में शामिल होने के महत्व पर जोर देता है। इल र (लभते स्वास्थ्यम्): व्यक्ति को स्वास्थ्य लाभ होता है
+                                    <br><br>अर्थ: नियमित व्यायाम से अच्छे स्वास्थ्य की प्राप्ति होती है। यह इस बात पर प्रकाश डालता है कि शारीरिक फिटनेस व्यायाम का परिणाम है। अलाफ़ी (दीर्घयुष्यम्): दीर्घायुशारीरिक गतिविधि में शामिल होने से लंबा और स्वस्थ जीवन मिलता है। इसका तात्पर्य यह है कि व्यायाम किसी के जीवनकाल को बढ़ा सकता है। करो (बालम): ताकत
+                                    <br><br>अर्थ: व्यायाम से शारीरिक शक्ति बढ़ती है। इससे पता चलता है कि सक्रिय रहने से शरीर मजबूत बनता है। और देखें View More
+                                </div>
+                        </div></div>
+                    </div>
+
+                    </div>
+
+                    
+
+                    
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
