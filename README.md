@@ -23,8 +23,7 @@ Unlock Ayurvedic insights through research. Enter any Ayurveda-related topic, an
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/ayumaton.git
-   cd ayumaton
+   git clone https://github.com/amri-tah/ayumaton.github.io.git
    ```
 
 ---
